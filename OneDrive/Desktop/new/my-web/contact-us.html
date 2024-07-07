@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/contact-us.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="./assets/logo.jpg" alt="HomeMade logo">
+            </a>
+            <ul class="menu-links">
+                <li><a href="/my-web/herosection.html">Home</a></li>
+                <li><a href="/my-web/aboutus.html">About Us</a></li>
+                <li><a href="/my-web/cooks.html">Cooks</a></li>
+                
+                <li><a href="login.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-us">
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="contact-section">
+                    <h2>General Enquiries</h2>
+                    <p>would you like to discuss your needs? Our team will be delighted to assist you.</p>
+                    <a href="mailto:homefoodforyou5@gmail.com">Email us</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="contact-section">
+                    <h2>Speak to Support</h2>
+                    <p>we are available for you any day - save time by starting your support request online
+                        and we'll connect you to a HomeMade support team.</p>
+                    <a href="tel:+254725996394">Call Support</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="contact-section">
+                    <h2>Feature Request</h2>
+                    <p>Share your ideas on a new functionalities to make
+                        HomeMade an even better platform.Suggest, discuss and vote for your favourite feauture.</p>
+                    <a href="mailto:homefoodforyou5@gmail.com">Submit Request</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="contact-section">
+                    <h2>Partner with Us</h2>
+                    <p>interested in becoming partner of HomeMade?
+                        We're excited to hear about your plans and happily assign you a partner manager!
+                        .</p>
+                    <a href="mailto:homefoodforyou5@gmail.com">Partner with Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-container" id="contact-form">
+            <h2>Contact Us</h2>
+            <p>Let's discuss your business needs and how HomeMade can help!</p>
+            <form id="business-needs-form" action="https://formspree.io/f/xpwazodn" method="POST">
+                <label for="enquiry-type">Type of Enquiry:</label>
+                <input type="text" id="enquiry-type" name="enquiry-type" required>
+
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+
+                <label for="company-email">Company Email:</label>
+                <input type="email" id="company-email" name="company-email" required>
+
+                <label for="description">How would you describe yourself?</label>
+                <input type="text" id="description" name="description" required>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" id="phone-number" name="phone-number" required>
+
+                <label for="help-description">How can we help?</label>
+                <textarea id="help-description" name="help-description" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+        <script src="scripts/contact-us.js"></script>
+</body>
+</main>
+
+<footer>
+    <!-- Footer content here -->
+</footer>
+</body>
+
+</html>
