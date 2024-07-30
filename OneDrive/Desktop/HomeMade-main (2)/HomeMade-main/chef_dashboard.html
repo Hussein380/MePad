@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/chef_dashboard.css">
+    <title>Chef Dashboard</title>
+</head>
+<body>
+<div class="sidebar">
+    <h2 class="text-center">Chef Dashboard</h2>
+    <a href="#profile">Profile Information</a>
+    <a href="#dishes">Dish Management</a>
+    <a href="#orders">Order Management</a>
+    <a href="#reviews">Reviews</a>
+</div>
+<div class="content">
+    <div id="profile">
+        <h2>Profile Information</h2>
+        <form id="profileForm">
+            <div class="form-group">
+                <label for="profilePicture">Profile Picture</label>
+                <input type="file" class="form-control" id="profilePicture">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" value="ChefUsername">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" value="chef@example.com">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea class="form-control" id="bio" rows="3">Chef bio here...</textarea>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <input type="text" class="form-control" id="rating" value="4.5" readonly>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" readonly>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="enableLocation" onclick="toggleLocation()">
+                    <label class="form-check-label" for="enableLocation">Enable Location</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+    </div>
+    <hr>
+    <div id="dishes">
+        <h2>Dish Management</h2>
+        <form id="addDishForm">
+            <div class="form-group">
+                <label for="dishName">Dish Name</label>
+                <input type="text" class="form-control" id="dishName">
+            </div>
+            <div class="form-group">
+                <label for="dishDescription">Dish Description</label>
+                <textarea class="form-control" id="dishDescription" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price">
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" class="form-control" id="quantity">
+            </div>
+            <div class="form-group">
+                <label for="dishImage">Dish Image</label>
+                <input type="file" class="form-control" id="dishImage">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Dish</button>
+        </form>
+        <h4 class="mt-4">Existing Dishes</h4>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Dish Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Dish 1</td>
+                <td>$10</td>
+                <td>5</td>
+                <td>
+                    <button class="btn btn-secondary btn-sm">Edit</button>
+                    <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div id="orders">
+        <h2>Order Management</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pending</td>
+                <td>
+                    <button class="btn btn-success btn-sm">Mark as Completed</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div id="reviews">
+        <h2>Reviews</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Great food! - 5 stars</li>
+            <li class="list-group-item">Average service - 3 stars</li>
+        </ul>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

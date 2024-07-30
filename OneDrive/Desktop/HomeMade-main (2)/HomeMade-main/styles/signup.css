@@ -1,0 +1,165 @@
+/* General Styles for the body */
+body {
+    /* Font family */
+    font-family: 'Poppins', sans-serif;
+    /* Background image with a dark overlay */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/background.jpg");
+    background-size: cover;
+    /* Center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styles for the container */
+.container {
+    /* Dark background with transparency */
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    /* Box shadow for a slight 3D effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: white;
+    /* Maximum width and responsive width */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Styles for the heading */
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Styles for the labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+/* Styles for the input fields */
+input[type="email"],
+input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Placeholder text color */
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #999;
+}
+
+/* Styles for the select field */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styles for the buttons */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    /* Smooth transition for hover effects */
+    transition: background-color 0.3s;
+}
+
+/* Specific style for Google login button */
+button[type="button"].gsi-material-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #747775;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #1f1f1f;
+    cursor: pointer;
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: 0.25px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 12px;
+    text-align: center;
+    transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+    vertical-align: middle;
+    width: 100%;
+}
+
+button[type="button"].gsi-material-button .gsi-material-button-icon {
+    height: 20px;
+    margin-right: 8px;
+    width: 20px;
+}
+
+button[type="button"].gsi-material-button .gsi-material-button-contents {
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+
+/* Disabled state */
+button[type="button"].gsi-material-button:disabled {
+    cursor: default;
+    background-color: #ffffff61;
+    border-color: #1f1f1f1f;
+}
+
+button[type="button"].gsi-material-button:disabled .gsi-material-button-contents,
+button[type="button"].gsi-material-button:disabled .gsi-material-button-icon {
+    opacity: 38%;
+}
+
+/* Active and focus state */
+button[type="button"].gsi-material-button:not(:disabled):active .gsi-material-button-state,
+button[type="button"].gsi-material-button:not(:disabled):focus .gsi-material-button-state {
+    background-color: #303030;
+    opacity: 12%;
+}
+
+/* Hover state */
+button[type="button"].gsi-material-button:not(:disabled):hover {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+button[type="button"].gsi-material-button:not(:disabled):hover .gsi-material-button-state {
+    background-color: #303030;
+    opacity: 8%;
+}
+
+button.gsi-material-button .gsi-material-button-content-wrapper {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+}
+
+button.gsi-material-button .gsi-material-button-icon {
+    margin-right: 10px;
+    /* Adjust spacing between icon and text */
+}
+
+/* Styles for links */
