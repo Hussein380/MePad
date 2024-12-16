@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
-    <link rel="stylesheet" href="todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <p>Todo List</p>
-    <div class="todo-input-grid">
-        <input placeholder="Todo name" class="js-input name-input">
-        <input type="date" class="js-due-date-input due-date-input">
-        
-        <button 
-        class="add-todo-btn js-add-todo-btn">Add
+    <header>
+        <input type="text" class="js-todo-input" placeholder="What do you need to do?">
+        <button class="js-add-todo-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path class="fill" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/>
+            </svg>
         </button>
+    </header>
+
+    <div class="container">
+        <ul class="todo" id="todo"></ul>
+        <ul class="todo" id="completed"></ul>
     </div>
 
-    <div clconsole.log('Todo List page loaded');ass="js-todo-list todo-grid"></div>
-
-
-    <script src="todo-list.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

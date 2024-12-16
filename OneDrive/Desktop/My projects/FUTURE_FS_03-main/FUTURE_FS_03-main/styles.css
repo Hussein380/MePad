@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+body {
+  background: #edf0f1;
+  padding: 80px 0 0 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #25b99a;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+header input {
+  flex-grow: 1;
+  height: 50px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 18px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+}
+
+header input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header button svg {
+  width: 24px;
+  height: 24px;
+}
+
+header button svg .fill {
+  fill: #25b99a;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+ul.todo {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.todo li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(44, 62, 80, 0.10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.todo li .todo-content {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+ul.todo li .buttons {
+  display: flex;
+}
+
+ul.todo li .buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+ul.todo li .buttons button svg {
+  width: 20px;
+  height: 20px;
+}
+
+ul.todo li .buttons .complete svg {
+  border: 1.5px solid #25b99a;
+  border-radius: 50%;
+}
+
+ul.todo#completed li {
+  opacity: 0.6;
+}
+
+ul.todo#completed:before {
+  content: '';
+  width: 150px;
+  height: 1px;
+  background: #d8e5e0;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin: 0 0 0 -75px;
+}
+
+ul.todo:empty:after {
+  content: 'No tasks found';
+  display: block;
+  text-align: center;
+  color: #aaa;
+  padding: 20px;
+}
